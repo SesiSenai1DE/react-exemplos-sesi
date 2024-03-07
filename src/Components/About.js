@@ -6,15 +6,52 @@ import styled, { keyframes } from "styled-components";
 
 // Componente funcional About
 
+const About = () => {
+  return (
+    <Container>
 
+      <ContentWrapper>
 
+        <Title>Sobre mim</Title>
 
+        <Description>
+          Sou um desenvolvedor apaixonado...
+        </Description>
 
-// 4ª Digitação
+        {/* Seção de habilidades */}
+        <SkillsWrapper>
+          <SkillTitle>Algumas das minhas habilidades:</SkillTitle>
 
+          {/* Lista de habilidades */}
+          <SkillList>
 
+            {/* Habilidade 1 */}
+            <Skill>
+              <SkillIcon>💻</SkillIcon>
+              <SkillName>Desenvolvimento web</SkillName>
+            </Skill>
 
+            {/* Habilidade 2 */}
+            <Skill>
+              <SkillIcon>📱</SkillIcon>
+              <SkillName>Desenvolvimento mobile</SkillName>
+            </Skill>
 
+            {/* Habilidade 3 */}
+            <Skill>
+              <SkillIcon>🎨</SkillIcon>
+              <SkillName>Design de Interfaces</SkillName>
+            </Skill>
+
+          </SkillList>
+
+        </SkillsWrapper>
+
+      </ContentWrapper>
+
+    </Container>
+  )
+}
 
 
 // Animação de entrada (slide-up)
